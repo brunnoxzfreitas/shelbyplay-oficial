@@ -524,38 +524,38 @@ img {
 
 .poster-movie {
   background:
-    radial-gradient(circle at 50% 18%, rgba(255, 104, 72, 0.8), transparent 34%),
-    linear-gradient(160deg, #452018, #11151a 74%);
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/movie-new.svg") center/cover;
 }
 
 .poster-hit {
   background:
-    radial-gradient(circle at 36% 22%, rgba(255, 224, 163, 0.82), transparent 28%),
-    linear-gradient(160deg, #4b3515, #151a20 72%);
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/top-hit.svg") center/cover;
 }
 
 .poster-football {
   background:
-    radial-gradient(circle at 58% 20%, rgba(37, 211, 102, 0.72), transparent 34%),
-    linear-gradient(160deg, #0d3b24, #10151a 74%);
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/football-live.svg") center/cover;
 }
 
 .poster-series {
   background:
-    radial-gradient(circle at 62% 18%, rgba(95, 135, 255, 0.72), transparent 32%),
-    linear-gradient(160deg, #17254a, #11151a 74%);
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/series-marathon.svg") center/cover;
 }
 
 .poster-classic {
   background:
-    radial-gradient(circle at 50% 20%, rgba(255, 250, 240, 0.58), transparent 28%),
-    linear-gradient(160deg, #343434, #11151a 72%);
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/classic-cinema.svg") center/cover;
 }
 
 .poster-game {
   background:
-    radial-gradient(circle at 55% 18%, rgba(255, 224, 163, 0.76), transparent 32%),
-    linear-gradient(160deg, #17351f, #26130f 74%);
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/match-round.svg") center/cover;
 }
 
 .screen-list {

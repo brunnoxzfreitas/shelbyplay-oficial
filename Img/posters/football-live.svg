@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 620">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a3b24"/>
+      <stop offset="0.58" stop-color="#07110d"/>
+      <stop offset="1" stop-color="#050606"/>
+    </linearGradient>
+    <radialGradient id="light" cx="58%" cy="18%" r="43%">
+      <stop offset="0" stop-color="#72ff9e"/>
+      <stop offset="0.36" stop-color="#25d366"/>
+      <stop offset="1" stop-color="#25d366" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="420" height="620" rx="34" fill="url(#bg)"/>
+  <rect width="420" height="620" rx="34" fill="url(#light)"/>
+  <path d="M42 370 C122 316 298 316 378 370 L378 566 C288 518 132 518 42 566 Z" fill="#0f6a37"/>
+  <path d="M42 468 C132 420 288 420 378 468" fill="none" stroke="#fffaf0" stroke-width="5" opacity=".5"/>
+  <path d="M210 324 v214" stroke="#fffaf0" stroke-width="5" opacity=".45"/>
+  <circle cx="210" cy="430" r="55" fill="none" stroke="#fffaf0" stroke-width="5" opacity=".45"/>
+  <circle cx="212" cy="190" r="72" fill="#fffaf0"/>
+  <path d="M212 126 l35 25 -13 42 h-44 l-13 -42 Z" fill="#11151a"/>
+  <path d="M144 184 l33 -33 M280 184 l-33 -33 M171 235 l19 -42 M253 235 l-19 -42" stroke="#11151a" stroke-width="14" stroke-linecap="round"/>
+</svg>
