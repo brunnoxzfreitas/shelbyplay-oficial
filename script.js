@@ -6,9 +6,22 @@
   const faqItems = document.querySelectorAll(".faq-item");
   const fadeItems = document.querySelectorAll(".fade-in");
   const backgroundVideo = document.querySelector(".site-video");
+  const seasonBadge = document.getElementById("seasonBadge");
+  const worldCupStrip = document.getElementById("worldCupStrip");
 
   backgroundVideo?.removeAttribute("controls");
   backgroundVideo?.addEventListener("contextmenu", (event) => event.preventDefault());
+
+  const today = new Date();
+  const worldCupStart = new Date("2026-06-11T00:00:00");
+  const worldCupEnd = new Date("2026-07-20T00:00:00");
+  const isWorldCupSeason = today >= worldCupStart && today < worldCupEnd;
+
+  if (isWorldCupSeason) {
+    document.body.classList.add("world-cup-active");
+    seasonBadge?.removeAttribute("hidden");
+    worldCupStrip?.removeAttribute("hidden");
+  }
 
   const scrollToCurrentHash = () => {
     if (!window.location.hash) return;

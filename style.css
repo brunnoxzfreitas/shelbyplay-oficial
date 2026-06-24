@@ -225,6 +225,24 @@ img {
   font-weight: 700;
 }
 
+.season-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(17, 153, 84, 0.2), rgba(255, 224, 163, 0.12));
+  border: 1px solid rgba(255, 224, 163, 0.26);
+  color: var(--accent-soft);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.season-badge[hidden] {
+  display: none;
+}
+
 .hero-title {
   margin: 16px 0 16px;
   max-width: 10ch;
@@ -522,6 +540,71 @@ img {
   color: var(--text);
   text-align: center;
   font-weight: 600;
+}
+
+.world-cup-strip {
+  width: min(calc(100% - 32px), var(--max-width));
+  margin: 18px auto 0;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 224, 163, 0.22);
+  background:
+    linear-gradient(135deg, rgba(17, 153, 84, 0.18), rgba(255, 224, 163, 0.08)),
+    rgba(255, 255, 255, 0.04);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.world-cup-strip[hidden] {
+  display: none;
+}
+
+.world-cup-strip span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.world-cup-strip strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.world-cup-strip a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  color: #06120b;
+  background: var(--accent);
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.world-cup-active .site-video-overlay {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255, 63, 47, 0.16), transparent 28%),
+    radial-gradient(circle at 86% 4%, rgba(17, 153, 84, 0.18), transparent 24%),
+    radial-gradient(circle at 80% 52%, rgba(255, 224, 163, 0.1), transparent 18%),
+    linear-gradient(180deg, rgba(5, 6, 7, 0.68) 0%, rgba(9, 11, 14, 0.84) 42%, rgba(5, 6, 7, 0.93) 100%);
+}
+
+.world-cup-active .screen-card {
+  border-color: rgba(255, 224, 163, 0.3);
+  background:
+    linear-gradient(145deg, rgba(255, 63, 47, 0.16), rgba(17, 153, 84, 0.12)),
+    rgba(10, 10, 10, 0.86);
 }
 
 .section,
@@ -1249,6 +1332,17 @@ img {
     margin-top: 0;
     padding: 14px;
     gap: 10px;
+  }
+
+  .world-cup-strip {
+    width: min(calc(100% - 24px), var(--max-width));
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .world-cup-strip a {
+    width: 100%;
   }
 
   .trust-item {
