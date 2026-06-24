@@ -193,6 +193,10 @@ img {
   align-items: center;
 }
 
+.hero-section-compact {
+  padding-top: 64px;
+}
+
 .hero-copy,
 .showcase-copy,
 .showcase-card {
@@ -230,6 +234,10 @@ img {
   text-transform: uppercase;
 }
 
+.hero-section-compact .hero-title {
+  max-width: 11ch;
+}
+
 .hero-description,
 .section-intro,
 .showcase-copy p,
@@ -245,6 +253,10 @@ img {
   font-size: 1.02rem;
   line-height: 1.68;
   margin-inline: 0;
+}
+
+.hero-section-compact .hero-description {
+  max-width: 36rem;
 }
 
 .hero-description-strong {
@@ -344,6 +356,10 @@ img {
     radial-gradient(circle at 50% 35%, rgba(255, 63, 47, 0.28), transparent 36%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mystery-card .screen-glow {
+  min-height: 300px;
 }
 
 .screen-glow img {
@@ -516,6 +532,10 @@ img {
   padding: 96px 0;
 }
 
+.curiosity-section {
+  padding-bottom: 72px;
+}
+
 .section-heading {
   max-width: 780px;
   margin: 0 auto 44px;
@@ -634,6 +654,7 @@ img {
 .pricing-section {
   width: min(calc(100% - 32px), var(--max-width));
   margin: 0 auto;
+  padding-top: 72px;
 }
 
 .pricing-card {
@@ -696,6 +717,11 @@ img {
   margin-top: 26px;
   padding: 28px;
   border-radius: var(--radius-lg);
+}
+
+.curiosity-section .feature-card,
+.pricing-card {
+  min-height: auto;
 }
 
 .pricing-table-header {
