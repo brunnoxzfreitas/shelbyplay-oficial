@@ -556,6 +556,31 @@ img {
   bottom: 25px;
 }
 
+.poster-tile.art-superhero,
+.poster-tile.art-toy,
+.poster-tile.art-fantasy,
+.poster-tile.art-series {
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.02) 10%, rgba(0, 0, 0, 0.34) 52%, rgba(0, 0, 0, 0.9) 100%),
+    var(--card-art) center/cover;
+}
+
+.poster-tile.art-superhero {
+  --card-art: url("./Img/posters/card-superhero.png");
+}
+
+.poster-tile.art-toy {
+  --card-art: url("./Img/posters/card-toy-story.png");
+}
+
+.poster-tile.art-fantasy {
+  --card-art: url("./Img/posters/card-fantasy.png");
+}
+
+.poster-tile.art-series {
+  --card-art: url("./Img/posters/card-series.png");
+}
+
 .poster-tile.is-match-card::before {
   background:
     radial-gradient(circle at 82% 18%, rgba(255, 217, 115, 0.18), transparent 20%),

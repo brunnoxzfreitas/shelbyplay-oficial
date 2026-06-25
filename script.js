@@ -29,8 +29,8 @@
       start: "2026-06-25",
       end: "2026-06-25",
       cards: [
-        { label: "Lançamento", title: "Supergirl", meta: "Estreia 25 jun" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Estreia 18 jun" },
+        { label: "Lançamento", title: "Supergirl", meta: "Estreia 25 jun", art: "superhero" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Estreia 18 jun", art: "toy" },
         {
           type: "match",
           group: "Grupo E",
@@ -49,7 +49,7 @@
             { flagCode: "de", name: "Alemanha" },
           ],
         },
-        { label: "Lançamento", title: "Mestres do Universo", meta: "Estreia 4 jun" },
+        { label: "Lançamento", title: "Mestres do Universo", meta: "Estreia 4 jun", art: "fantasy" },
         { label: "Evento", title: "Rodada de grupos", meta: "Copa 2026" },
       ],
     },
@@ -84,9 +84,9 @@
             { flagCode: "gb-eng", name: "Inglaterra" },
           ],
         },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Família" },
-        { label: "Série", title: "Maratona da semana", meta: "Top do dia" },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
+        { label: "Série", title: "Maratona da semana", meta: "Top do dia", art: "series" },
       ],
     },
     {
@@ -95,9 +95,9 @@
       cards: [
         { label: "Copa", title: "Mata-mata", meta: "Ao vivo" },
         { label: "Copa", title: "Oitavas de final", meta: "Jogos decisivos" },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Família" },
-        { label: "Série", title: "Maratona da semana", meta: "Top do dia" },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
+        { label: "Série", title: "Maratona da semana", meta: "Top do dia", art: "series" },
         { label: "Evento", title: "Jogos decisivos", meta: "Copa 2026" },
       ],
     },
@@ -105,11 +105,11 @@
       start: "2026-07-09",
       end: "2026-07-15",
       cards: [
-        { label: "Lançamento", title: "Moana", meta: "Estreia 9 jul" },
+        { label: "Lançamento", title: "Moana", meta: "Estreia 9 jul", art: "toy" },
         { label: "Copa", title: "Fase final", meta: "Ao vivo" },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Família" },
-        { label: "Série", title: "Top do dia", meta: "Maratona" },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
+        { label: "Série", title: "Top do dia", meta: "Maratona", art: "series" },
         { label: "Evento", title: "Clima de final", meta: "Copa 2026" },
       ],
     },
@@ -117,11 +117,11 @@
       start: "2026-07-16",
       end: "2026-07-20",
       cards: [
-        { label: "Lançamento", title: "A Odisseia", meta: "Estreia 16 jul" },
+        { label: "Lançamento", title: "A Odisseia", meta: "Estreia 16 jul", art: "fantasy" },
         { label: "Copa", title: "Grande final", meta: "Ao vivo" },
-        { label: "Cinema", title: "Moana", meta: "Família" },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque" },
-        { label: "Série", title: "Maratona", meta: "Top do dia" },
+        { label: "Cinema", title: "Moana", meta: "Família", art: "toy" },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
+        { label: "Série", title: "Maratona", meta: "Top do dia", art: "series" },
         { label: "Evento", title: "Campeão do mundo", meta: "Copa 2026" },
       ],
     },
@@ -147,6 +147,8 @@
     getActiveHighlights().forEach((card, index) => {
       const tile = posterTiles[index];
       if (!tile) return;
+
+      tile.classList.remove("art-superhero", "art-toy", "art-fantasy", "art-series");
 
       if (card.type === "match") {
         tile.classList.add("is-match-card");
@@ -178,6 +180,7 @@
 
       tile.classList.remove("is-match-card");
       tile.classList.toggle("has-card-meta", Boolean(card.meta));
+      if (card.art) tile.classList.add(`art-${card.art}`);
       tile.innerHTML = `
         <span>${card.label}</span>
         <strong>${card.title}</strong>
