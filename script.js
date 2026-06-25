@@ -34,6 +34,7 @@
         {
           type: "match",
           group: "Grupo E",
+          date: "25/06/2026",
           time: "16:00",
           teams: [
             { flagCode: "cw", name: "Curaçao" },
@@ -43,6 +44,7 @@
         {
           type: "match",
           group: "Grupo E",
+          date: "25/06/2026",
           time: "16:00",
           teams: [
             { flagCode: "ec", name: "Equador" },
@@ -60,6 +62,7 @@
         {
           type: "match",
           group: "Grupo I",
+          date: "26/06/2026",
           time: "16:00",
           teams: [
             { flagCode: "no", name: "Noruega" },
@@ -69,6 +72,7 @@
         {
           type: "match",
           group: "Grupo H",
+          date: "26/06/2026",
           time: "19:00",
           teams: [
             { flagCode: "uy", name: "Uruguai" },
@@ -78,6 +82,7 @@
         {
           type: "match",
           group: "Grupo L",
+          date: "26/06/2026",
           time: "22:00",
           teams: [
             { flagCode: "pa", name: "Panamá" },
@@ -172,7 +177,7 @@
           <div class="match-meta">
             <span>Hoje</span>
             <strong>${card.time}</strong>
-            <small>História do jogo</small>
+            <small>${card.date}</small>
           </div>
         `;
         return;
