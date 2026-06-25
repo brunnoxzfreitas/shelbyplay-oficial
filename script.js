@@ -159,7 +159,7 @@
                 (team) => `
                   <div class="match-team">
                     <span class="match-flag">
-                      <img src="https://flagcdn.com/w40/${team.flagCode}.png" alt="Bandeira ${team.name}" loading="lazy">
+                      <img src="https://flagcdn.com/w40/${team.flagCode}.png" alt="Bandeira ${team.name}">
                     </span>
                     <strong>${team.name}</strong>
                   </div>
