@@ -509,10 +509,10 @@ img {
 }
 
 .poster-tile strong {
-  max-width: 7ch;
+  max-width: 9.5ch;
   color: var(--text);
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.12rem;
+  font-size: 1rem;
   line-height: 0.95;
 }
 
@@ -1471,7 +1471,8 @@ img {
   }
 
   .poster-tile strong {
-    font-size: 1rem;
+    max-width: 10.5ch;
+    font-size: 0.92rem;
   }
 
   .screen-list {
