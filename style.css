@@ -598,14 +598,19 @@ img {
 .match-flag {
   width: 24px;
   height: 18px;
-  display: grid;
-  place-items: center;
+  display: block;
+  overflow: hidden;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  font-size: 1rem;
-  line-height: 1;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+.match-flag img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .match-team strong {

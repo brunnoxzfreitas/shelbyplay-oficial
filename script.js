@@ -36,8 +36,8 @@
           group: "Grupo E",
           time: "16:00",
           teams: [
-            { flag: "🇨🇼", name: "Curaçao" },
-            { flag: "🇨🇮", name: "C. Marfim" },
+            { flagCode: "cw", name: "Curaçao" },
+            { flagCode: "ci", name: "C. Marfim" },
           ],
         },
         {
@@ -45,8 +45,8 @@
           group: "Grupo E",
           time: "16:00",
           teams: [
-            { flag: "🇪🇨", name: "Equador" },
-            { flag: "🇩🇪", name: "Alemanha" },
+            { flagCode: "ec", name: "Equador" },
+            { flagCode: "de", name: "Alemanha" },
           ],
         },
         { label: "Lançamento", title: "Mestres do Universo", meta: "Estreia 4 jun" },
@@ -62,8 +62,8 @@
           group: "Grupo I",
           time: "16:00",
           teams: [
-            { flag: "🇳🇴", name: "Noruega" },
-            { flag: "🇫🇷", name: "França" },
+            { flagCode: "no", name: "Noruega" },
+            { flagCode: "fr", name: "França" },
           ],
         },
         {
@@ -71,8 +71,8 @@
           group: "Grupo H",
           time: "19:00",
           teams: [
-            { flag: "🇺🇾", name: "Uruguai" },
-            { flag: "🇰🇷", name: "Coreia" },
+            { flagCode: "uy", name: "Uruguai" },
+            { flagCode: "kr", name: "Coreia" },
           ],
         },
         {
@@ -80,8 +80,8 @@
           group: "Grupo L",
           time: "22:00",
           teams: [
-            { flag: "🇵🇦", name: "Panamá" },
-            { flag: "🏴", name: "Inglaterra" },
+            { flagCode: "pa", name: "Panamá" },
+            { flagCode: "gb-eng", name: "Inglaterra" },
           ],
         },
         { label: "Cinema", title: "Supergirl", meta: "Em destaque" },
@@ -158,7 +158,9 @@
               .map(
                 (team) => `
                   <div class="match-team">
-                    <span class="match-flag" aria-hidden="true">${team.flag}</span>
+                    <span class="match-flag">
+                      <img src="https://flagcdn.com/w40/${team.flagCode}.png" alt="Bandeira ${team.name}" loading="lazy">
+                    </span>
                     <strong>${team.name}</strong>
                   </div>
                 `
