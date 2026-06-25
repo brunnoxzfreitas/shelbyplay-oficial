@@ -29,70 +29,110 @@
       start: "2026-06-25",
       end: "2026-06-25",
       cards: [
-        ["Lançamento", "Supergirl"],
-        ["Cinema", "Toy Story 5"],
-        ["Copa hoje", "Alemanha x Equador"],
-        ["Copa hoje", "Curaçao x C. Marfim"],
-        ["Lançamento", "Mestres do Universo"],
-        ["Evento", "Rodada de grupos"],
+        { label: "Lançamento", title: "Supergirl", meta: "Estreia 25 jun" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Estreia 18 jun" },
+        {
+          type: "match",
+          group: "Grupo E",
+          time: "16:00",
+          teams: [
+            { flag: "🇨🇼", name: "Curaçao" },
+            { flag: "🇨🇮", name: "C. Marfim" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo E",
+          time: "16:00",
+          teams: [
+            { flag: "🇪🇨", name: "Equador" },
+            { flag: "🇩🇪", name: "Alemanha" },
+          ],
+        },
+        { label: "Lançamento", title: "Mestres do Universo", meta: "Estreia 4 jun" },
+        { label: "Evento", title: "Rodada de grupos", meta: "Copa 2026" },
       ],
     },
     {
       start: "2026-06-26",
       end: "2026-06-27",
       cards: [
-        ["Copa hoje", "Noruega x França"],
-        ["Copa hoje", "Uruguai x Coreia"],
-        ["Copa hoje", "Panamá x Inglaterra"],
-        ["Cinema", "Supergirl"],
-        ["Cinema", "Toy Story 5"],
-        ["Evento", "Última rodada"],
+        {
+          type: "match",
+          group: "Grupo I",
+          time: "16:00",
+          teams: [
+            { flag: "🇳🇴", name: "Noruega" },
+            { flag: "🇫🇷", name: "França" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo H",
+          time: "19:00",
+          teams: [
+            { flag: "🇺🇾", name: "Uruguai" },
+            { flag: "🇰🇷", name: "Coreia" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo L",
+          time: "22:00",
+          teams: [
+            { flag: "🇵🇦", name: "Panamá" },
+            { flag: "🏴", name: "Inglaterra" },
+          ],
+        },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Família" },
+        { label: "Série", title: "Maratona da semana", meta: "Top do dia" },
       ],
     },
     {
       start: "2026-06-28",
       end: "2026-07-08",
       cards: [
-        ["Copa", "Mata-mata"],
-        ["Copa", "Oitavas de final"],
-        ["Cinema", "Supergirl"],
-        ["Cinema", "Toy Story 5"],
-        ["Série", "Maratona da semana"],
-        ["Evento", "Jogos decisivos"],
+        { label: "Copa", title: "Mata-mata", meta: "Ao vivo" },
+        { label: "Copa", title: "Oitavas de final", meta: "Jogos decisivos" },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Família" },
+        { label: "Série", title: "Maratona da semana", meta: "Top do dia" },
+        { label: "Evento", title: "Jogos decisivos", meta: "Copa 2026" },
       ],
     },
     {
       start: "2026-07-09",
       end: "2026-07-15",
       cards: [
-        ["Lançamento", "Moana"],
-        ["Copa", "Fase final"],
-        ["Cinema", "Supergirl"],
-        ["Cinema", "Toy Story 5"],
-        ["Série", "Top do dia"],
-        ["Evento", "Clima de final"],
+        { label: "Lançamento", title: "Moana", meta: "Estreia 9 jul" },
+        { label: "Copa", title: "Fase final", meta: "Ao vivo" },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Família" },
+        { label: "Série", title: "Top do dia", meta: "Maratona" },
+        { label: "Evento", title: "Clima de final", meta: "Copa 2026" },
       ],
     },
     {
       start: "2026-07-16",
       end: "2026-07-20",
       cards: [
-        ["Lançamento", "A Odisseia"],
-        ["Copa", "Grande final"],
-        ["Cinema", "Moana"],
-        ["Cinema", "Supergirl"],
-        ["Série", "Maratona"],
-        ["Evento", "Campeão do mundo"],
+        { label: "Lançamento", title: "A Odisseia", meta: "Estreia 16 jul" },
+        { label: "Copa", title: "Grande final", meta: "Ao vivo" },
+        { label: "Cinema", title: "Moana", meta: "Família" },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque" },
+        { label: "Série", title: "Maratona", meta: "Top do dia" },
+        { label: "Evento", title: "Campeão do mundo", meta: "Copa 2026" },
       ],
     },
   ];
   const fallbackCards = [
-    ["Lançamento", "Filme novo"],
-    ["Top do dia", "Mais visto"],
-    ["Ao vivo", "Futebol"],
-    ["Série", "Maratona"],
-    ["Clássico", "Cinema"],
-    ["Jogo", "Rodada"],
+    { label: "Lançamento", title: "Filme novo", meta: "Atualizado" },
+    { label: "Top do dia", title: "Mais visto", meta: "Em alta" },
+    { label: "Ao vivo", title: "Futebol", meta: "Agora" },
+    { label: "Série", title: "Maratona", meta: "Top do dia" },
+    { label: "Clássico", title: "Cinema", meta: "Sugestão" },
+    { label: "Jogo", title: "Rodada", meta: "Ao vivo" },
   ];
 
   const getActiveHighlights = () => {
@@ -104,14 +144,44 @@
   };
 
   const updatePosterHighlights = () => {
-    getActiveHighlights().forEach(([label, title], index) => {
+    getActiveHighlights().forEach((card, index) => {
       const tile = posterTiles[index];
       if (!tile) return;
 
-      const labelNode = tile.querySelector("span");
-      const titleNode = tile.querySelector("strong");
-      if (labelNode) labelNode.textContent = label;
-      if (titleNode) titleNode.textContent = title;
+      if (card.type === "match") {
+        tile.classList.add("is-match-card");
+        tile.classList.remove("has-card-meta");
+        tile.innerHTML = `
+          <span class="match-group">${card.group}</span>
+          <div class="match-teams">
+            ${card.teams
+              .map(
+                (team) => `
+                  <div class="match-team">
+                    <span class="match-flag" aria-hidden="true">${team.flag}</span>
+                    <strong>${team.name}</strong>
+                  </div>
+                `
+              )
+              .join("")}
+          </div>
+          <div class="match-meta">
+            <span>Hoje</span>
+            <strong>${card.time}</strong>
+            <small>História do jogo</small>
+          </div>
+        `;
+        return;
+      }
+
+      tile.classList.remove("is-match-card");
+      tile.classList.toggle("has-card-meta", Boolean(card.meta));
+      tile.innerHTML = `
+        <span>${card.label}</span>
+        <strong>${card.title}</strong>
+        ${card.meta ? `<small>${card.meta}</small>` : ""}
+        <i class="${tile.dataset.icon || "fas fa-star"}"></i>
+      `;
     });
   };
 

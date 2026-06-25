@@ -494,6 +494,7 @@ img {
 
 .poster-tile span,
 .poster-tile strong,
+.poster-tile small,
 .poster-tile i {
   position: relative;
   z-index: 1;
@@ -516,12 +517,136 @@ img {
   line-height: 0.95;
 }
 
+.poster-tile small {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 8px;
+  padding: 4px 7px;
+  border-radius: 999px;
+  color: rgba(255, 250, 240, 0.82);
+  background: rgba(0, 0, 0, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  font-size: 0.56rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .poster-tile i {
   position: absolute;
   right: 21px;
   bottom: 21px;
   color: var(--text);
   font-size: 1rem;
+}
+
+.poster-tile.is-match-card {
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.02) 8%, rgba(0, 0, 0, 0.34) 52%, rgba(0, 0, 0, 0.84) 100%),
+    url("./Img/posters/football-live.svg") center/cover;
+  box-shadow:
+    inset 0 -64px 48px rgba(0, 0, 0, 0.54),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.poster-tile.has-card-meta i {
+  bottom: 25px;
+}
+
+.poster-tile.is-match-card::before {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255, 217, 115, 0.24), transparent 20%),
+    linear-gradient(135deg, rgba(255, 90, 72, 0.12), transparent 34%),
+    linear-gradient(180deg, rgba(4, 14, 12, 0.1), rgba(0, 0, 0, 0.38));
+}
+
+.poster-tile.is-match-card::after {
+  content: none;
+}
+
+.match-group,
+.match-teams,
+.match-meta {
+  position: relative;
+  z-index: 1;
+}
+
+.match-group {
+  color: rgba(255, 250, 240, 0.72);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.match-teams {
+  width: 100%;
+  display: grid;
+  gap: 7px;
+}
+
+.match-team {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.match-flag {
+  width: 24px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 1rem;
+  line-height: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+.match-team strong {
+  max-width: none;
+  font-size: 0.86rem;
+  line-height: 1.05;
+  text-transform: none;
+}
+
+.match-meta {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  column-gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 250, 240, 0.14);
+}
+
+.match-meta span {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.66rem;
+  line-height: 1;
+}
+
+.match-meta strong {
+  max-width: none;
+  color: var(--text);
+  font-size: 0.86rem;
+  line-height: 1;
+}
+
+.match-meta small {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+  color: var(--accent);
+  font-size: 0.54rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .poster-movie {
