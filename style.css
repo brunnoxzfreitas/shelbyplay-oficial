@@ -449,19 +449,115 @@ img {
 
 .poster-wall {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
   overflow: hidden;
   border-radius: 20px;
-  border: 1px solid rgba(255, 250, 240, 0.14);
-  background: #050607;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
 }
 
-.real-poster-wall img {
-  width: 100%;
-  height: clamp(300px, 34vw, 380px);
-  object-fit: cover;
-  object-position: center 34%;
-  filter: saturate(1.03) contrast(1.03);
+.poster-tile {
+  position: relative;
+  min-height: 138px;
+  overflow: hidden;
+  padding: 14px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  border: 1px solid rgba(255, 250, 240, 0.16);
+  box-shadow: inset 0 -58px 48px rgba(0, 0, 0, 0.48);
+}
+
+.poster-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 64% 20%, rgba(255, 250, 240, 0.18), transparent 18%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 34%);
+  opacity: 0.8;
+}
+
+.poster-tile::after {
+  content: "";
+  position: absolute;
+  inset: auto 12px 12px auto;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.poster-tile span,
+.poster-tile strong,
+.poster-tile i {
+  position: relative;
+  z-index: 1;
+}
+
+.poster-tile span {
+  margin-bottom: 5px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.poster-tile strong {
+  max-width: 7ch;
+  color: var(--text);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.12rem;
+  line-height: 0.95;
+}
+
+.poster-tile i {
+  position: absolute;
+  right: 21px;
+  bottom: 21px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.poster-movie {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/movie-new.svg") center/cover;
+}
+
+.poster-hit {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/top-hit.svg") center/cover;
+}
+
+.poster-football {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/football-live.svg") center/cover;
+}
+
+.poster-series {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/series-marathon.svg") center/cover;
+}
+
+.poster-classic {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/classic-cinema.svg") center/cover;
+}
+
+.poster-game {
+  background:
+    linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.2) 54%, rgba(0, 0, 0, 0.78) 100%),
+    url("./Img/posters/match-round.svg") center/cover;
 }
 
 .screen-list {
@@ -1365,12 +1461,17 @@ img {
   }
 
   .poster-wall {
-    border-radius: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 
-  .real-poster-wall img {
-    height: 300px;
-    object-position: center 36%;
+  .poster-tile {
+    min-height: 96px;
+    padding: 12px;
+  }
+
+  .poster-tile strong {
+    font-size: 1rem;
   }
 
   .screen-list {
