@@ -29,8 +29,6 @@
       start: "2026-06-25",
       end: "2026-06-25",
       cards: [
-        { label: "Lançamento", title: "Supergirl", meta: "Estreia 25 jun", art: "superhero" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Estreia 18 jun", art: "toy" },
         {
           type: "match",
           group: "Grupo E",
@@ -51,19 +49,57 @@
             { flagCode: "de", name: "Alemanha" },
           ],
         },
-        { label: "Lançamento", title: "Mestres do Universo", meta: "Estreia 4 jun", art: "fantasy" },
-        { label: "Evento", title: "Rodada de grupos", meta: "Copa 2026" },
+        {
+          type: "match",
+          group: "Grupo F",
+          date: "25/06/2026",
+          time: "19:00",
+          teams: [
+            { flagCode: "tn", name: "Tunísia" },
+            { flagCode: "nl", name: "Países Baixos" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo F",
+          date: "25/06/2026",
+          time: "19:00",
+          teams: [
+            { flagCode: "jp", name: "Japão" },
+            { flagCode: "se", name: "Suécia" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo D",
+          date: "25/06/2026",
+          time: "22:00",
+          teams: [
+            { flagCode: "tr", name: "Turquia" },
+            { flagCode: "us", name: "Estados Unidos" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo D",
+          date: "25/06/2026",
+          time: "22:00",
+          teams: [
+            { flagCode: "py", name: "Paraguai" },
+            { flagCode: "au", name: "Austrália" },
+          ],
+        },
       ],
     },
     {
       start: "2026-06-26",
-      end: "2026-06-27",
+      end: "2026-06-26",
       cards: [
         {
           type: "match",
           group: "Grupo I",
           date: "26/06/2026",
-          time: "16:00",
+          time: "15:00",
           teams: [
             { flagCode: "no", name: "Noruega" },
             { flagCode: "fr", name: "França" },
@@ -71,35 +107,137 @@
         },
         {
           type: "match",
-          group: "Grupo H",
+          group: "Grupo I",
           date: "26/06/2026",
-          time: "19:00",
+          time: "15:00",
           teams: [
-            { flagCode: "uy", name: "Uruguai" },
-            { flagCode: "kr", name: "Coreia" },
+            { flagCode: "sn", name: "Senegal" },
+            { flagCode: "iq", name: "Iraque" },
           ],
         },
         {
           type: "match",
-          group: "Grupo L",
+          group: "Grupo H",
           date: "26/06/2026",
-          time: "22:00",
+          time: "20:00",
+          teams: [
+            { flagCode: "cv", name: "Cabo Verde" },
+            { flagCode: "sa", name: "Arábia Saudita" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo H",
+          date: "26/06/2026",
+          time: "20:00",
+          teams: [
+            { flagCode: "uy", name: "Uruguai" },
+            { flagCode: "es", name: "Espanha" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo G",
+          date: "26/06/2026",
+          time: "23:00",
+          teams: [
+            { flagCode: "eg", name: "Egito" },
+            { flagCode: "ir", name: "Irã" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo G",
+          date: "26/06/2026",
+          time: "23:00",
+          teams: [
+            { flagCode: "nz", name: "Nova Zelândia" },
+            { flagCode: "be", name: "Bélgica" },
+          ],
+        },
+      ],
+    },
+    {
+      start: "2026-06-27",
+      end: "2026-06-27",
+      cards: [
+        {
+          type: "match",
+          group: "Grupo L",
+          date: "27/06/2026",
+          time: "17:00",
           teams: [
             { flagCode: "pa", name: "Panamá" },
             { flagCode: "gb-eng", name: "Inglaterra" },
           ],
         },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
-        { label: "Série", title: "Maratona da semana", meta: "Top do dia", art: "series" },
+        {
+          type: "match",
+          group: "Grupo L",
+          date: "27/06/2026",
+          time: "17:00",
+          teams: [
+            { flagCode: "hr", name: "Croácia" },
+            { flagCode: "gh", name: "Gana" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo K",
+          date: "27/06/2026",
+          time: "19:30",
+          teams: [
+            { flagCode: "co", name: "Colômbia" },
+            { flagCode: "pt", name: "Portugal" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo K",
+          date: "27/06/2026",
+          time: "19:30",
+          teams: [
+            { flagCode: "cd", name: "RD Congo" },
+            { flagCode: "uz", name: "Uzbequistão" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo J",
+          date: "27/06/2026",
+          time: "22:00",
+          teams: [
+            { flagCode: "jo", name: "Jordânia" },
+            { flagCode: "ar", name: "Argentina" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Grupo J",
+          date: "27/06/2026",
+          time: "22:00",
+          teams: [
+            { flagCode: "dz", name: "Argélia" },
+            { flagCode: "at", name: "Áustria" },
+          ],
+        },
       ],
     },
     {
       start: "2026-06-28",
-      end: "2026-07-08",
+      end: "2026-06-28",
       cards: [
-        { label: "Copa", title: "Mata-mata", meta: "Ao vivo" },
-        { label: "Copa", title: "Oitavas de final", meta: "Jogos decisivos" },
+        {
+          type: "match",
+          group: "Mata-mata",
+          date: "28/06/2026",
+          time: "15:00",
+          teams: [
+            { flagCode: "za", name: "África do Sul" },
+            { flagCode: "ca", name: "Canadá" },
+          ],
+        },
+        { label: "Copa", title: "Round de 32", meta: "Começou" },
         { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
         { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
         { label: "Série", title: "Maratona da semana", meta: "Top do dia", art: "series" },
