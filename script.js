@@ -26,222 +26,159 @@
   const isWorldCupSeason = today >= worldCupStart && today < worldCupEnd;
   const highlightSchedule = [
     {
-      start: "2026-06-25",
-      end: "2026-06-25",
+      start: "2026-06-30",
+      end: "2026-06-30",
       cards: [
         {
           type: "match",
-          group: "Grupo E",
-          date: "25/06/2026",
-          time: "16:00",
+          group: "Mata-mata",
+          date: "30/06/2026",
+          time: "13:00",
           teams: [
-            { flagCode: "cw", name: "Curaçao" },
             { flagCode: "ci", name: "C. Marfim" },
+            { flagCode: "no", name: "Noruega" },
           ],
         },
         {
           type: "match",
-          group: "Grupo E",
-          date: "25/06/2026",
-          time: "16:00",
+          group: "Mata-mata",
+          date: "30/06/2026",
+          time: "17:00",
           teams: [
-            { flagCode: "ec", name: "Equador" },
-            { flagCode: "de", name: "Alemanha" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo F",
-          date: "25/06/2026",
-          time: "19:00",
-          teams: [
-            { flagCode: "tn", name: "Tunísia" },
-            { flagCode: "nl", name: "Países Baixos" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo F",
-          date: "25/06/2026",
-          time: "19:00",
-          teams: [
-            { flagCode: "jp", name: "Japão" },
+            { flagCode: "fr", name: "França" },
             { flagCode: "se", name: "Suécia" },
           ],
         },
         {
           type: "match",
-          group: "Grupo D",
-          date: "25/06/2026",
-          time: "22:00",
+          group: "Mata-mata",
+          date: "30/06/2026",
+          time: "21:00",
           teams: [
-            { flagCode: "tr", name: "Turquia" },
-            { flagCode: "us", name: "Estados Unidos" },
+            { flagCode: "mx", name: "México" },
+            { flagCode: "ec", name: "Equador" },
           ],
         },
-        {
-          type: "match",
-          group: "Grupo D",
-          date: "25/06/2026",
-          time: "22:00",
-          teams: [
-            { flagCode: "py", name: "Paraguai" },
-            { flagCode: "au", name: "Austrália" },
-          ],
-        },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
+        { label: "Série", title: "Maratona da semana", meta: "Top do dia", art: "series" },
       ],
     },
     {
-      start: "2026-06-26",
-      end: "2026-06-26",
-      cards: [
-        {
-          type: "match",
-          group: "Grupo I",
-          date: "26/06/2026",
-          time: "15:00",
-          teams: [
-            { flagCode: "no", name: "Noruega" },
-            { flagCode: "fr", name: "França" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo I",
-          date: "26/06/2026",
-          time: "15:00",
-          teams: [
-            { flagCode: "sn", name: "Senegal" },
-            { flagCode: "iq", name: "Iraque" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo H",
-          date: "26/06/2026",
-          time: "20:00",
-          teams: [
-            { flagCode: "cv", name: "Cabo Verde" },
-            { flagCode: "sa", name: "Arábia Saudita" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo H",
-          date: "26/06/2026",
-          time: "20:00",
-          teams: [
-            { flagCode: "uy", name: "Uruguai" },
-            { flagCode: "es", name: "Espanha" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo G",
-          date: "26/06/2026",
-          time: "23:00",
-          teams: [
-            { flagCode: "eg", name: "Egito" },
-            { flagCode: "ir", name: "Irã" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo G",
-          date: "26/06/2026",
-          time: "23:00",
-          teams: [
-            { flagCode: "nz", name: "Nova Zelândia" },
-            { flagCode: "be", name: "Bélgica" },
-          ],
-        },
-      ],
-    },
-    {
-      start: "2026-06-27",
-      end: "2026-06-27",
-      cards: [
-        {
-          type: "match",
-          group: "Grupo L",
-          date: "27/06/2026",
-          time: "17:00",
-          teams: [
-            { flagCode: "pa", name: "Panamá" },
-            { flagCode: "gb-eng", name: "Inglaterra" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo L",
-          date: "27/06/2026",
-          time: "17:00",
-          teams: [
-            { flagCode: "hr", name: "Croácia" },
-            { flagCode: "gh", name: "Gana" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo K",
-          date: "27/06/2026",
-          time: "19:30",
-          teams: [
-            { flagCode: "co", name: "Colômbia" },
-            { flagCode: "pt", name: "Portugal" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo K",
-          date: "27/06/2026",
-          time: "19:30",
-          teams: [
-            { flagCode: "cd", name: "RD Congo" },
-            { flagCode: "uz", name: "Uzbequistão" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo J",
-          date: "27/06/2026",
-          time: "22:00",
-          teams: [
-            { flagCode: "jo", name: "Jordânia" },
-            { flagCode: "ar", name: "Argentina" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Grupo J",
-          date: "27/06/2026",
-          time: "22:00",
-          teams: [
-            { flagCode: "dz", name: "Argélia" },
-            { flagCode: "at", name: "Áustria" },
-          ],
-        },
-      ],
-    },
-    {
-      start: "2026-06-28",
-      end: "2026-06-28",
+      start: "2026-07-01",
+      end: "2026-07-01",
       cards: [
         {
           type: "match",
           group: "Mata-mata",
-          date: "28/06/2026",
-          time: "15:00",
+          date: "01/07/2026",
+          time: "12:00",
           teams: [
-            { flagCode: "za", name: "África do Sul" },
-            { flagCode: "ca", name: "Canadá" },
+            { flagCode: "gb-eng", name: "Inglaterra" },
+            { flagCode: "cd", name: "RD Congo" },
           ],
         },
-        { label: "Copa", title: "Round de 32", meta: "Começou" },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
+        {
+          type: "match",
+          group: "Mata-mata",
+          date: "01/07/2026",
+          time: "16:00",
+          teams: [
+            { flagCode: "be", name: "Bélgica" },
+            { flagCode: "sn", name: "Senegal" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Mata-mata",
+          date: "01/07/2026",
+          time: "20:00",
+          teams: [
+            { flagCode: "us", name: "EUA" },
+            { flagCode: "ba", name: "Bósnia" },
+          ],
+        },
+        { label: "Copa", title: "Mata-mata", meta: "Ao vivo" },
         { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
-        { label: "Série", title: "Maratona da semana", meta: "Top do dia", art: "series" },
-        { label: "Evento", title: "Jogos decisivos", meta: "Copa 2026" },
+        { label: "Série", title: "Top do dia", meta: "Maratona", art: "series" },
+      ],
+    },
+    {
+      start: "2026-07-02",
+      end: "2026-07-02",
+      cards: [
+        {
+          type: "match",
+          group: "Mata-mata",
+          date: "02/07/2026",
+          time: "15:00",
+          teams: [
+            { flagCode: "es", name: "Espanha" },
+            { flagCode: "at", name: "Áustria" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Mata-mata",
+          date: "02/07/2026",
+          time: "19:00",
+          teams: [
+            { flagCode: "pt", name: "Portugal" },
+            { flagCode: "hr", name: "Croácia" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Mata-mata",
+          date: "02/07/2026",
+          time: "23:00",
+          teams: [
+            { flagCode: "ch", name: "Suíça" },
+            { flagCode: "dz", name: "Argélia" },
+          ],
+        },
+        { label: "Copa", title: "Jogos decisivos", meta: "Round de 32" },
+        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
+        { label: "Série", title: "Maratona", meta: "Top do dia", art: "series" },
+      ],
+    },
+    {
+      start: "2026-07-03",
+      end: "2026-07-03",
+      cards: [
+        {
+          type: "match",
+          group: "Mata-mata",
+          date: "03/07/2026",
+          time: "14:00",
+          teams: [
+            { flagCode: "au", name: "Austrália" },
+            { flagCode: "eg", name: "Egito" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Mata-mata",
+          date: "03/07/2026",
+          time: "18:00",
+          teams: [
+            { flagCode: "ar", name: "Argentina" },
+            { flagCode: "cv", name: "Cabo Verde" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Mata-mata",
+          date: "03/07/2026",
+          time: "21:30",
+          teams: [
+            { flagCode: "co", name: "Colômbia" },
+            { flagCode: "gh", name: "Gana" },
+          ],
+        },
+        { label: "Copa", title: "Round de 32", meta: "Últimos jogos" },
+        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
+        { label: "Evento", title: "Classificados", meta: "Mata-mata" },
       ],
     },
     {
