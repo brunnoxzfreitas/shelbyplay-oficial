@@ -185,7 +185,7 @@
       start: "2026-07-09",
       end: "2026-07-15",
       cards: [
-        { label: "Lançamento", title: "Moana", meta: "Estreia 9 jul", art: "toy" },
+        { label: "Lançamento", title: "Moana", meta: "Estreia 9 jul", art: "moana" },
         { label: "Copa", title: "Fase final", meta: "Ao vivo" },
         { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
         { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
@@ -199,7 +199,7 @@
       cards: [
         { label: "Lançamento", title: "A Odisseia", meta: "Estreia 16 jul", art: "fantasy" },
         { label: "Copa", title: "Grande final", meta: "Ao vivo" },
-        { label: "Cinema", title: "Moana", meta: "Família", art: "toy" },
+        { label: "Cinema", title: "Moana", meta: "Família", art: "moana" },
         { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
         { label: "Série", title: "Maratona", meta: "Top do dia", art: "series" },
         { label: "Evento", title: "Campeão do mundo", meta: "Copa 2026" },
@@ -228,7 +228,7 @@
       const tile = posterTiles[index];
       if (!tile) return;
 
-      tile.classList.remove("art-superhero", "art-toy", "art-fantasy", "art-series");
+      tile.classList.remove("art-superhero", "art-toy", "art-moana", "art-fantasy", "art-series");
 
       if (card.type === "match") {
         tile.classList.add("is-match-card");

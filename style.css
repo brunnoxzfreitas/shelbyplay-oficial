@@ -558,6 +558,7 @@ img {
 
 .poster-tile.art-superhero,
 .poster-tile.art-toy,
+.poster-tile.art-moana,
 .poster-tile.art-fantasy,
 .poster-tile.art-series {
   background:
@@ -570,7 +571,11 @@ img {
 }
 
 .poster-tile.art-toy {
-  --card-art: url("./Img/posters/card-toy-story.png");
+  --card-art: url("./Img/posters/card-toy-story-v2.webp");
+}
+
+.poster-tile.art-moana {
+  --card-art: url("./Img/posters/card-moana-v2.webp");
 }
 
 .poster-tile.art-fantasy {
