@@ -24,195 +24,14 @@
   const worldCupStart = new Date("2026-06-11T00:00:00");
   const worldCupEnd = new Date("2026-07-20T00:00:00");
   const isWorldCupSeason = today >= worldCupStart && today < worldCupEnd;
-  const highlightSchedule = [
-    {
-      start: "2026-06-30",
-      end: "2026-06-30",
-      cards: [
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "30/06/2026",
-          time: "13:00",
-          teams: [
-            { flagCode: "ci", name: "C. Marfim" },
-            { flagCode: "no", name: "Noruega" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "30/06/2026",
-          time: "17:00",
-          teams: [
-            { flagCode: "fr", name: "França" },
-            { flagCode: "se", name: "Suécia" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "30/06/2026",
-          time: "21:00",
-          teams: [
-            { flagCode: "mx", name: "México" },
-            { flagCode: "ec", name: "Equador" },
-          ],
-        },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
-        { label: "Série", title: "Maratona da semana", meta: "Top do dia", art: "series" },
-      ],
-    },
-    {
-      start: "2026-07-01",
-      end: "2026-07-01",
-      cards: [
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "01/07/2026",
-          time: "12:00",
-          teams: [
-            { flagCode: "gb-eng", name: "Inglaterra" },
-            { flagCode: "cd", name: "RD Congo" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "01/07/2026",
-          time: "16:00",
-          teams: [
-            { flagCode: "be", name: "Bélgica" },
-            { flagCode: "sn", name: "Senegal" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "01/07/2026",
-          time: "20:00",
-          teams: [
-            { flagCode: "us", name: "EUA" },
-            { flagCode: "ba", name: "Bósnia" },
-          ],
-        },
-        { label: "Copa", title: "Mata-mata", meta: "Ao vivo" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
-        { label: "Série", title: "Top do dia", meta: "Maratona", art: "series" },
-      ],
-    },
-    {
-      start: "2026-07-02",
-      end: "2026-07-02",
-      cards: [
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "02/07/2026",
-          time: "15:00",
-          teams: [
-            { flagCode: "es", name: "Espanha" },
-            { flagCode: "at", name: "Áustria" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "02/07/2026",
-          time: "19:00",
-          teams: [
-            { flagCode: "pt", name: "Portugal" },
-            { flagCode: "hr", name: "Croácia" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "02/07/2026",
-          time: "23:00",
-          teams: [
-            { flagCode: "ch", name: "Suíça" },
-            { flagCode: "dz", name: "Argélia" },
-          ],
-        },
-        { label: "Copa", title: "Jogos decisivos", meta: "Round de 32" },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
-        { label: "Série", title: "Maratona", meta: "Top do dia", art: "series" },
-      ],
-    },
-    {
-      start: "2026-07-03",
-      end: "2026-07-03",
-      cards: [
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "03/07/2026",
-          time: "14:00",
-          teams: [
-            { flagCode: "au", name: "Austrália" },
-            { flagCode: "eg", name: "Egito" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "03/07/2026",
-          time: "18:00",
-          teams: [
-            { flagCode: "ar", name: "Argentina" },
-            { flagCode: "cv", name: "Cabo Verde" },
-          ],
-        },
-        {
-          type: "match",
-          group: "Mata-mata",
-          date: "03/07/2026",
-          time: "21:30",
-          teams: [
-            { flagCode: "co", name: "Colômbia" },
-            { flagCode: "gh", name: "Gana" },
-          ],
-        },
-        { label: "Copa", title: "Round de 32", meta: "Últimos jogos" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
-        { label: "Evento", title: "Classificados", meta: "Mata-mata" },
-      ],
-    },
-    {
-      start: "2026-07-09",
-      end: "2026-07-15",
-      cards: [
-        { label: "Lançamento", title: "Moana", meta: "Estreia 9 jul", art: "moana" },
-        { label: "Copa", title: "Fase final", meta: "Ao vivo" },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
-        { label: "Cinema", title: "Toy Story 5", meta: "Família", art: "toy" },
-        { label: "Série", title: "Top do dia", meta: "Maratona", art: "series" },
-        { label: "Evento", title: "Clima de final", meta: "Copa 2026" },
-      ],
-    },
-    {
-      start: "2026-07-16",
-      end: "2026-07-20",
-      cards: [
-        { label: "Lançamento", title: "A Odisseia", meta: "Estreia 16 jul", art: "fantasy" },
-        { label: "Copa", title: "Grande final", meta: "Ao vivo" },
-        { label: "Cinema", title: "Moana", meta: "Família", art: "moana" },
-        { label: "Cinema", title: "Supergirl", meta: "Em destaque", art: "superhero" },
-        { label: "Série", title: "Maratona", meta: "Top do dia", art: "series" },
-        { label: "Evento", title: "Campeão do mundo", meta: "Copa 2026" },
-      ],
-    },
-  ];
+  const highlightSchedule = [];
   const fallbackCards = [
-    { label: "Lançamento", title: "Filme novo", meta: "Atualizado" },
-    { label: "Top do dia", title: "Mais visto", meta: "Em alta" },
-    { label: "Ao vivo", title: "Futebol", meta: "Agora" },
-    { label: "Série", title: "Maratona", meta: "Top do dia" },
-    { label: "Clássico", title: "Cinema", meta: "Sugestão" },
-    { label: "Jogo", title: "Rodada", meta: "Ao vivo" },
+    { label: "Filmes", title: "Novidades", meta: "Atualizado", art: "superhero" },
+    { label: "Família", title: "Animação", meta: "Para todos", art: "toy" },
+    { label: "Ao vivo", title: "Futebol", meta: "Hoje", art: "field" },
+    { label: "Séries", title: "Maratona", meta: "Top do dia", art: "series" },
+    { label: "Cinema", title: "Clássicos", meta: "Sugestão", art: "fantasy" },
+    { label: "Eventos", title: "Ao vivo", meta: "Na hora", art: "field" },
   ];
 
   const getActiveHighlights = () => {
@@ -228,7 +47,7 @@
       const tile = posterTiles[index];
       if (!tile) return;
 
-      tile.classList.remove("art-superhero", "art-toy", "art-moana", "art-fantasy", "art-series");
+      tile.classList.remove("art-superhero", "art-toy", "art-moana", "art-fantasy", "art-series", "art-field");
 
       if (card.type === "match") {
         tile.classList.add("is-match-card");

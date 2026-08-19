@@ -560,7 +560,8 @@ img {
 .poster-tile.art-toy,
 .poster-tile.art-moana,
 .poster-tile.art-fantasy,
-.poster-tile.art-series {
+.poster-tile.art-series,
+.poster-tile.art-field {
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.02) 10%, rgba(0, 0, 0, 0.34) 52%, rgba(0, 0, 0, 0.9) 100%),
     var(--card-art) center/cover;
@@ -584,6 +585,10 @@ img {
 
 .poster-tile.art-series {
   --card-art: url("./Img/posters/card-series.png");
+}
+
+.poster-tile.art-field {
+  --card-art: url("./Img/posters/football-field.png");
 }
 
 .poster-tile.is-match-card::before {
