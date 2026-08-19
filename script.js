@@ -24,7 +24,296 @@
   const worldCupStart = new Date("2026-06-11T00:00:00");
   const worldCupEnd = new Date("2026-07-20T00:00:00");
   const isWorldCupSeason = today >= worldCupStart && today < worldCupEnd;
-  const highlightSchedule = [];
+  const highlightSchedule = [
+    {
+      start: "2026-08-19",
+      end: "2026-08-19",
+      cards: [
+        {
+          type: "match",
+          group: "Libertadores",
+          date: "19/08/2026",
+          time: "19:00",
+          when: "Hoje",
+          teams: [
+            { flagCode: "py", name: "Cerro Porteño" },
+            { flagCode: "br", name: "Palmeiras" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Libertadores",
+          date: "19/08/2026",
+          time: "21:30",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Flamengo" },
+            { flagCode: "br", name: "Cruzeiro" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "22/08/2026",
+          time: "16:00",
+          when: "Sáb",
+          teams: [
+            { flagCode: "br", name: "Fluminense" },
+            { flagCode: "br", name: "Remo" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "22/08/2026",
+          time: "18:30",
+          when: "Sáb",
+          teams: [
+            { flagCode: "br", name: "Internacional" },
+            { flagCode: "br", name: "Atlético-MG" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "22/08/2026",
+          time: "20:30",
+          when: "Sáb",
+          teams: [
+            { flagCode: "br", name: "Cruzeiro" },
+            { flagCode: "br", name: "Flamengo" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "16:00",
+          when: "Dom",
+          teams: [
+            { flagCode: "br", name: "Palmeiras" },
+            { flagCode: "br", name: "Vasco" },
+          ],
+        },
+      ],
+    },
+    {
+      start: "2026-08-20",
+      end: "2026-08-20",
+      cards: [
+        {
+          type: "match",
+          group: "Libertadores",
+          date: "20/08/2026",
+          time: "19:00",
+          when: "Hoje",
+          teams: [
+            { flagCode: "ec", name: "LDU" },
+            { flagCode: "br", name: "Mirassol" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Libertadores",
+          date: "20/08/2026",
+          time: "21:30",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Corinthians" },
+            { flagCode: "ar", name: "Rosario Central" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "22/08/2026",
+          time: "16:00",
+          when: "Sáb",
+          teams: [
+            { flagCode: "br", name: "Fluminense" },
+            { flagCode: "br", name: "Remo" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "22/08/2026",
+          time: "18:30",
+          when: "Sáb",
+          teams: [
+            { flagCode: "br", name: "Internacional" },
+            { flagCode: "br", name: "Atlético-MG" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "22/08/2026",
+          time: "20:30",
+          when: "Sáb",
+          teams: [
+            { flagCode: "br", name: "Cruzeiro" },
+            { flagCode: "br", name: "Flamengo" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "16:00",
+          when: "Dom",
+          teams: [
+            { flagCode: "br", name: "Palmeiras" },
+            { flagCode: "br", name: "Vasco" },
+          ],
+        },
+      ],
+    },
+    {
+      start: "2026-08-22",
+      end: "2026-08-22",
+      cards: [
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "22/08/2026",
+          time: "16:00",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Fluminense" },
+            { flagCode: "br", name: "Remo" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "22/08/2026",
+          time: "18:30",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Internacional" },
+            { flagCode: "br", name: "Atlético-MG" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "22/08/2026",
+          time: "20:30",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Cruzeiro" },
+            { flagCode: "br", name: "Flamengo" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "16:00",
+          when: "Dom",
+          teams: [
+            { flagCode: "br", name: "Palmeiras" },
+            { flagCode: "br", name: "Vasco" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "16:00",
+          when: "Dom",
+          teams: [
+            { flagCode: "br", name: "Bragantino" },
+            { flagCode: "br", name: "Grêmio" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "16:00",
+          when: "Dom",
+          teams: [
+            { flagCode: "br", name: "Vitória" },
+            { flagCode: "br", name: "Bahia" },
+          ],
+        },
+      ],
+    },
+    {
+      start: "2026-08-23",
+      end: "2026-08-24",
+      cards: [
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "16:00",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Palmeiras" },
+            { flagCode: "br", name: "Vasco" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "16:00",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Bragantino" },
+            { flagCode: "br", name: "Grêmio" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "16:00",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Vitória" },
+            { flagCode: "br", name: "Bahia" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "18:30",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Chapecoense" },
+            { flagCode: "br", name: "São Paulo" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "18:30",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Santos" },
+            { flagCode: "br", name: "Mirassol" },
+          ],
+        },
+        {
+          type: "match",
+          group: "Brasileirão",
+          date: "23/08/2026",
+          time: "19:30",
+          when: "Hoje",
+          teams: [
+            { flagCode: "br", name: "Coritiba" },
+            { flagCode: "br", name: "Corinthians" },
+          ],
+        },
+      ],
+    },
+  ];
   const fallbackCards = [
     { label: "Filmes", title: "Novidades", meta: "Atualizado", art: "superhero" },
     { label: "Família", title: "Animação", meta: "Para todos", art: "toy" },
@@ -41,6 +330,9 @@
 
     return activePeriod?.cards ?? fallbackCards;
   };
+  const hasScheduledEvent = highlightSchedule.some(
+    (period) => today >= dateFromISO(period.start) && today <= dateEndFromISO(period.end)
+  );
 
   const updatePosterHighlights = () => {
     getActiveHighlights().forEach((card, index) => {
@@ -69,7 +361,7 @@
               .join("")}
           </div>
           <div class="match-meta">
-            <span>Hoje</span>
+            <span>${card.when || "Hoje"}</span>
             <strong>${card.time}</strong>
             <small>${card.date}</small>
           </div>
@@ -89,7 +381,7 @@
     });
   };
 
-  if (isWorldCupSeason) {
+  if (isWorldCupSeason || hasScheduledEvent) {
     document.body.classList.add("world-cup-active");
     seasonBadge?.removeAttribute("hidden");
     worldCupStrip?.removeAttribute("hidden");
