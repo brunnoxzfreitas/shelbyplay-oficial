@@ -323,27 +323,8 @@
     { label: "Eventos", title: "Ao vivo", meta: "Na hora", art: "field" },
   ];
   const teamBadges = {
-    "Atlético-MG": { short: "CAM", colors: ["#111111", "#ffffff"] },
-    Bahia: { short: "BAH", colors: ["#0057b8", "#d71920"] },
-    Bragantino: { short: "RBB", colors: ["#ffffff", "#dd1021"] },
-    "Cerro Porteño": { short: "CCP", colors: ["#123c8c", "#d71920"] },
-    Chapecoense: { short: "CHA", colors: ["#128a3d", "#ffffff"] },
-    Corinthians: { short: "COR", colors: ["#ffffff", "#111111"] },
-    Coritiba: { short: "CFC", colors: ["#00843d", "#ffffff"] },
-    Cruzeiro: { short: "CRU", colors: ["#0046ad", "#ffffff"] },
-    Flamengo: { short: "FLA", colors: ["#d71920", "#111111"] },
-    Fluminense: { short: "FLU", colors: ["#7a1128", "#00843d"] },
-    Grêmio: { short: "GRE", colors: ["#00a6e7", "#111111"] },
-    Internacional: { short: "INT", colors: ["#d71920", "#ffffff"] },
-    LDU: { short: "LDU", colors: ["#ffffff", "#d71920"] },
-    Mirassol: { short: "MIR", colors: ["#f7d117", "#00843d"] },
-    Palmeiras: { short: "PAL", colors: ["#006437", "#ffffff"] },
-    Remo: { short: "REM", colors: ["#003b7a", "#ffffff"] },
-    "Rosario Central": { short: "ROS", colors: ["#0046ad", "#f7d117"] },
-    Santos: { short: "SAN", colors: ["#ffffff", "#111111"] },
-    "São Paulo": { short: "SPF", colors: ["#ffffff", "#d71920"] },
-    Vasco: { short: "VAS", colors: ["#111111", "#ffffff"] },
-    Vitória: { short: "VIT", colors: ["#d71920", "#111111"] },
+    Flamengo: { short: "FLA", image: "./Img/teams/flamengo.png" },
+    Palmeiras: { short: "PAL", image: "./Img/teams/palmeiras.png" },
   };
 
   const getTeamBadge = (teamName) => {
@@ -392,8 +373,8 @@
 
                   return `
                   <div class="match-team">
-                    <span class="match-crest" style="--crest-primary: ${badge.colors[0]}; --crest-secondary: ${badge.colors[1]};">
-                      ${badge.short}
+                    <span class="${badge.image ? "match-crest match-crest-real" : "match-crest match-crest-neutral"}" style="${badge.image ? "" : `--crest-primary: ${badge.colors[0]}; --crest-secondary: ${badge.colors[1]};`}">
+                      ${badge.image ? `<img src="${badge.image}" alt="Escudo ${team.name}">` : badge.short}
                     </span>
                     <strong>${team.name}</strong>
                   </div>
