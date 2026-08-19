@@ -344,6 +344,7 @@
     Vasco: { short: "VAS", image: "./Img/teams/vasco.png" },
     Vitória: { short: "VIT", image: "./Img/teams/vitoria.png" },
   };
+  const crestAssetVersion = "official-crests-20260819";
 
   const getTeamBadge = (teamName) => {
     const badge = teamBadges[teamName];
@@ -391,9 +392,9 @@
 
                   return `
                   <div class="match-team">
-                    <span class="${badge.image ? "match-crest match-crest-real" : "match-crest match-crest-neutral"}" style="${badge.image ? "" : `--crest-primary: ${badge.colors[0]}; --crest-secondary: ${badge.colors[1]};`}">
-                      ${badge.image ? `<img src="${badge.image}" alt="Escudo ${team.name}">` : badge.short}
-                    </span>
+                      <span class="${badge.image ? "match-crest match-crest-real" : "match-crest match-crest-neutral"}" style="${badge.image ? "" : `--crest-primary: ${badge.colors[0]}; --crest-secondary: ${badge.colors[1]};`}">
+                        ${badge.image ? `<img src="${badge.image}?v=${crestAssetVersion}" alt="Escudo ${team.name}">` : badge.short}
+                      </span>
                     <strong>${team.name}</strong>
                   </div>
                 `;
