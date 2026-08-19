@@ -3,3 +3,4 @@ npm-debug.log*
 .netlify/
 .DS_Store
 Thumbs.db
+tmp_crests/

@@ -323,8 +323,24 @@
     { label: "Eventos", title: "Ao vivo", meta: "Na hora", art: "field" },
   ];
   const teamBadges = {
+    "Athletico-PR": { short: "CAP", image: "./Img/teams/athletico-pr.png" },
+    "Atlético-MG": { short: "CAM", image: "./Img/teams/atletico-mg.png" },
+    Bahia: { short: "BAH", image: "./Img/teams/bahia.png" },
+    Botafogo: { short: "BOT", image: "./Img/teams/botafogo.png" },
+    Bragantino: { short: "RBB", image: "./Img/teams/bragantino.png" },
+    Chapecoense: { short: "CHA", image: "./Img/teams/chapecoense.png" },
+    Corinthians: { short: "COR", image: "./Img/teams/corinthians.png" },
+    Coritiba: { short: "CFC", image: "./Img/teams/coritiba.png" },
+    Cruzeiro: { short: "CRU", image: "./Img/teams/cruzeiro.png" },
     Flamengo: { short: "FLA", image: "./Img/teams/flamengo.png" },
+    Fluminense: { short: "FLU", image: "./Img/teams/fluminense.png" },
+    Grêmio: { short: "GRE", image: "./Img/teams/gremio.png" },
+    Internacional: { short: "INT", image: "./Img/teams/internacional.png" },
     Palmeiras: { short: "PAL", image: "./Img/teams/palmeiras.png" },
+    Santos: { short: "SAN", image: "./Img/teams/santos.png" },
+    "São Paulo": { short: "SPF", image: "./Img/teams/sao-paulo.png" },
+    Vasco: { short: "VAS", image: "./Img/teams/vasco.png" },
+    Vitória: { short: "VIT", image: "./Img/teams/vitoria.png" },
   };
 
   const getTeamBadge = (teamName) => {
