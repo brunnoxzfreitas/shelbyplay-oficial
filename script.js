@@ -322,6 +322,44 @@
     { label: "Cinema", title: "Clássicos", meta: "Sugestão", art: "fantasy" },
     { label: "Eventos", title: "Ao vivo", meta: "Na hora", art: "field" },
   ];
+  const teamBadges = {
+    "Atlético-MG": { short: "CAM", colors: ["#111111", "#ffffff"] },
+    Bahia: { short: "BAH", colors: ["#0057b8", "#d71920"] },
+    Bragantino: { short: "RBB", colors: ["#ffffff", "#dd1021"] },
+    "Cerro Porteño": { short: "CCP", colors: ["#123c8c", "#d71920"] },
+    Chapecoense: { short: "CHA", colors: ["#128a3d", "#ffffff"] },
+    Corinthians: { short: "COR", colors: ["#ffffff", "#111111"] },
+    Coritiba: { short: "CFC", colors: ["#00843d", "#ffffff"] },
+    Cruzeiro: { short: "CRU", colors: ["#0046ad", "#ffffff"] },
+    Flamengo: { short: "FLA", colors: ["#d71920", "#111111"] },
+    Fluminense: { short: "FLU", colors: ["#7a1128", "#00843d"] },
+    Grêmio: { short: "GRE", colors: ["#00a6e7", "#111111"] },
+    Internacional: { short: "INT", colors: ["#d71920", "#ffffff"] },
+    LDU: { short: "LDU", colors: ["#ffffff", "#d71920"] },
+    Mirassol: { short: "MIR", colors: ["#f7d117", "#00843d"] },
+    Palmeiras: { short: "PAL", colors: ["#006437", "#ffffff"] },
+    Remo: { short: "REM", colors: ["#003b7a", "#ffffff"] },
+    "Rosario Central": { short: "ROS", colors: ["#0046ad", "#f7d117"] },
+    Santos: { short: "SAN", colors: ["#ffffff", "#111111"] },
+    "São Paulo": { short: "SPF", colors: ["#ffffff", "#d71920"] },
+    Vasco: { short: "VAS", colors: ["#111111", "#ffffff"] },
+    Vitória: { short: "VIT", colors: ["#d71920", "#111111"] },
+  };
+
+  const getTeamBadge = (teamName) => {
+    const badge = teamBadges[teamName];
+    if (badge) return badge;
+
+    return {
+      short: teamName
+        .split(/\s+/)
+        .map((word) => word[0])
+        .join("")
+        .slice(0, 3)
+        .toUpperCase(),
+      colors: ["#17212b", "#ffe0a3"],
+    };
+  };
 
   const getActiveHighlights = () => {
     const activePeriod = highlightSchedule.find(
@@ -349,14 +387,18 @@
           <div class="match-teams">
             ${card.teams
               .map(
-                (team) => `
+                (team) => {
+                  const badge = getTeamBadge(team.name);
+
+                  return `
                   <div class="match-team">
-                    <span class="match-flag">
-                      <img src="https://flagcdn.com/w40/${team.flagCode}.png" alt="Bandeira ${team.name}">
+                    <span class="match-crest" style="--crest-primary: ${badge.colors[0]}; --crest-secondary: ${badge.colors[1]};">
+                      ${badge.short}
                     </span>
                     <strong>${team.name}</strong>
                   </div>
-                `
+                `;
+                }
               )
               .join("")}
           </div>
